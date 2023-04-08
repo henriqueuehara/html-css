@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeos com HTML5</title>
+</head>
+<body>
+  <h1>Inserindo vídeos hospedados localmente</h1>
+  <h2>Vídeo Local</h2>
+  <p>Este vídeo está hospedado no meu próprio servidor.</p>
+  <video width="560" height="315" controls autoplay loop width="500" poster="img/pexels-tumb.png">
+    <source src="midia/pexel-video-format.mp4" type="video/mp4">
+    <source src="midia/pexel-video-format.webm" type="video/webm">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos...</p>
+  </video>
+
+  <h1>Inserindo vídeos não hospedados localmente</h1>
+  <h2>Inserindo vídeos do Youtube</h2>
+  <p>Utilize o youtube caso não exista problema em o vídeo ser público</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/aR-KAldshAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+  <h2>Inserindo vídeos do Vimeo</h2>
+  <p>Utilize o vimeo, caso não queira deixar o vídeo público</p>
+  <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=c9ff23" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

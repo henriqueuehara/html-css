@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+  font-size: 1rem;
+}
+
+:root{
+  --tran-01: all 0.5s ease;
+}
+
+body {
+  background-color: lightsteelblue;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: .5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: darkblue;
+  background-color: lightblue;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: darkred;
+}
+
+p {
+  text-align: justify;
+  padding: .5rem;
+}
+
+img {
+  margin: 1rem;
+}
+
+.img-next {
+  /* transition: var(--tran-01); */
+  transform: rotate(180deg);
+}

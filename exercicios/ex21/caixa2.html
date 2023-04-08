@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    :root {
+      --primary-bg-color: #696969;
+      --secondary-bg-color: #3d3c3c;
+    }
+
+    body {
+      background-image: linear-gradient(90deg, var(--primary-bg-color), var(--secondary-bg-color));
+      margin: 0px;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: .5em;
+      margin: 0px;
+    }
+    
+    header > nav a {
+      color: #fff;
+      margin-right: 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header > nav a::after {
+      content: ' |';
+    }
+
+    header > nav a:hover {
+      color: var(--primary-bg-color);
+    }
+
+    .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 1em;
+    }
+    .toggle input {
+      display: none;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 34px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    .div-foto{
+      display: inline-block;
+      margin-right: 1em;
+      justify-content: end;
+    }
+    #foto{
+      border-radius: 50%;
+      background-color: #fff;
+      height: 3em;
+      width: 3em;
+    }
+
+    main {
+      background-color: #fff;
+      padding: .5em;
+      margin: .5em;
+      border-radius: 20px;
+    }
+
+    article {
+      background-color: rgba(238, 233, 233, 0.486);
+      border-radius: 20px;
+      padding: .5em;
+      margin: .5em;
+      /* box-shadow: (inset cria uma sombra interna)(delocamento horizontal) (delocamento vertical) (espalhamento) (cor adicionar transparência <= 50%); */
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+    }
+
+    article > aside {
+      font-weight: bold;
+      padding: .2em;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: .5em;
+      margin: 0px;
+    }
+
+    footer > p {
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu site</h1>
+    <nav>
+      <a href="#">1 - Link</a>
+      <a href="#">2 - Link</a>
+      <a href="#">3 - Link</a>
+      <a href="#">4 - Link</a>
+      <a href="#">5 - Link</a>
+      <div class="div-foto"><img id="foto" src="../../img/instagram.jpg"></img></div>
+      
+      <div>
+        <span class="text-toggle">Alterar modo para light:</span>
+        <label class="toggle">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="assuntos">
+
+    </section>
+    <section id="noticias">
+
+      <article>
+        <h2>Notícia sobre o Brasil</h2>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus atque porro neque saepe in earum, blanditiis voluptates qui ut laborum distinctio sed vel odio hic necessitatibus perspiciatis nam debitis eaque.</p>
+
+        <aside>
+          <p>Artigo escrito por José da Silva</p>
+        </aside>
+      </article>
+
+      <article>
+        <h2>Notícia sobre os EUA</h2>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus atque porro neque saepe in earum, blanditiis voluptates qui ut laborum distinctio sed vel odio hic necessitatibus perspiciatis nam debitis eaque.</p>
+
+        <aside>
+          <p>Artigo escrito por Matheus Oliveira</p>
+        </aside>
+      </article>
+
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido pelo CursoemVideo</p>
+    <p>&copy;Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
