@@ -36,7 +36,7 @@
   --light-color: rgba(255, 255, 255, 0.950);
   --light-bg-color: darkgray;
   --dark-bg-color: rgb(51, 51, 51);
-  --transparent-color: rgba(0, 0, 0, 0.100);
+  --transparent-color: rgba(0, 0, 0, 0.400);
 
   /* - fontes - */
   --primary-font: Verdana, Geneva, Tahoma, sans-serif;
@@ -92,6 +92,10 @@ section {
   font-size: 3.5vw;
 }
 
+section > p {
+  padding: 1em;
+}
+
 section.normal {
   background-color: var(--light-color);
   color: var(--dark-color);
@@ -100,12 +104,25 @@ section.normal {
 section.imagem {
   background-color: var(--dark-bg-color);
   color: var(--light-color);
-
+  box-shadow: inset 6px 6px 13px 0px var(--transparent-color);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section.imagem p {
   display: inline-block;
   background-color: var(--transparent-color);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.950);
+}
+
+section#img1 {
+  background-image: url('../static/imagens/background001.jpg');
+  background-position: right center;
+}
+
+section#img2 {
+  background-image: url('../static/imagens/background002.jpg');
+  background-position: right center;
 }
 
 /* -- footer -- */
