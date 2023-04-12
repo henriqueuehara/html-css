@@ -2,19 +2,46 @@
 
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'Passion One';
+  src: url('../fonts/Passion_One/PassionOne-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  /*
+    Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg
+  */
+  font-family: 'Sriracha';
+  src: url('../fonts/Sriracha/Sriracha-Regular.ttf') format('truetype'); 
+  font-weight: 400;
+}
+
 /* -- setting -- */
 
 * {
   margin: 0px;
   padding: 0px;
+  font-size: 1em;
 }
 
 :root {
+  /* - cores - */
   --dark-color: rgba(0, 0, 0, 0.950);
   --light-color: rgba(255, 255, 255, 0.950);
   --light-bg-color: darkgray;
   --dark-bg-color: rgb(51, 51, 51);
   --transparent-color: rgba(0, 0, 0, 0.100);
+
+  /* - fontes - */
+  --primary-font: Verdana, Geneva, Tahoma, sans-serif;
+  --secondary-font: 'Passion One', cursive;
+  --tertiary-font: 'Sriracha', cursive;
 }
 
 /* -- html e body -- */
@@ -46,6 +73,8 @@ header > h1 {
   padding-top: 50px;
   font-variant: small-caps;
   /* text-transform: uppercase; */
+  font-family: var(--secondary-font);
+  font-size: 10vw;
 }
 
 header > p {
@@ -59,6 +88,8 @@ section {
   padding-bottom: 10vh;
   line-height: 2em;
   padding-left: 30px;
+  font-family: var(--tertiary-font);
+  font-size: 3.5vw;
 }
 
 section.normal {
@@ -73,7 +104,7 @@ section.imagem {
 }
 
 section.imagem p {
-  width: 400px;
+  display: inline-block;
   background-color: var(--transparent-color);
 }
 
