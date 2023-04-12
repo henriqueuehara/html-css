@@ -1,0 +1,21 @@
+/* -- import -- */
+
+@charset "UTF-8";
+
+/* -- setting -- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --dark-color: #000;
+  --light-color: #fff;
+}
+
+/* -- header -- */
+
+/* -- main -- */
+
+/* -- footer -- */
