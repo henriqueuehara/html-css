@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 14 - Tabela</title>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-size: 16px;
+    }
+
+    :root {
+      --light-color: rgba(255, 255, 255, 0.950);
+      --dark-bg-color: #383838;
+      --dark-color: rgba(0, 0, 0, 0.950);
+      --light-bg-color: lightgray;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      padding: 10px;
+      width: 450px;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      border-top: 1px solid var(--dark-color);
+      border-right: 1px solid var(--dark-color);
+      border-left: 1px solid var(--dark-color);
+      background-color: var(--light-bg-color);
+    }
+
+    th, td {
+      border: 1px solid var(--dark-color);
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: var(--dark-bg-color);
+      color: var(--light-color);
+    }
+
+    th.th-normal {
+      color: var(--dark-color);
+      background-color: var(--light-color);
+    }
+
+    td.td-normal, th.normal {
+      text-align: left;
+    }
+
+    td.td-especial {
+      font-weight: bold;
+      color: var(--light-color);
+      background-color: var(--dark-bg-color);
+    }
+
+    .total {
+      background-color: var(--light-bg-color);
+      color: var(--dark-color);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Desafio 14</h1>
+
+  <table>
+    <caption>Tabela Escolar</caption>
+
+    <thead>
+      <tr>
+        <th rowspan="2" scope="col">Área</th>
+        <th rowspan="2" scope="col">Disciplinas</th>
+        <th colspan="2" scope="colgroup">Notas</th>
+        <th rowspan="2" scope="col">Médias</th>
+      </tr>
+      <tr>
+        <th scope="col">Nota 1</th>
+        <th scope="col">Nota 2</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th rowspan="4" class="th-normal" scope="rowgroup">Exatas</th>
+        <td class="td-normal">Matemática</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td class="td-normal">Física</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td class="td-normal">Química</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td class="td-normal">Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <th colspan="4" scope="row" class="normal">Média de Exatas</th>
+        <td class="td-especial">0.0</td>
+      </tr>
+
+      <tr>
+        <th rowspan="2" class="th-normal" scope="rowgroup">Humanas</th>
+        <td class="td-normal">História</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td class="td-normal">Geografia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <th colspan="4" scope="row" class="normal">Média de Humanas</th>
+        <td class="td-especial">0.0</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th colspan="4" scope="row" class="total">Total de Disciplinas</th>
+        <td class="total">6</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
