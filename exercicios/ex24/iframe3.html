@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso do iframe</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe#tela {
+      width: 95vw;
+      border: 2px solid #000;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Faça uma escolha</h1>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatem labore modi quae repellendus atque deleniti impedit error tempore excepturi veritatis iusto exercitationem, officia nemo laboriosam qui a mollitia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas eaque vero ducimus excepturi, sapiente aspernatur quam, temporibus deserunt, velit provident! Aliquid animi rerum voluptates. Dolorem iste itaque praesentium voluptates.</p>
+
+  <ul>
+    <li><a href="pages/pagina1.html" target="frame">Primeira página</a></li>
+    <li><a href="pages/pagina2.html" target="frame">Segunda página</a></li>
+    <li><a href="pages/pagina3.html" target="frame">Terceira página</a></li>
+  </ul>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ducimus quasi ab unde repudiandae est qui possimus officiis totam omnis aliquam soluta neque, itaque culpa provident rem illum nesciunt! Saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores at magnam est tempora dolor ipsum illum doloremque veritatis consequuntur nulla, vero quidem in nemo eum quia architecto obcaecati sint labore!</p>
+
+  <iframe 
+  srcdoc="<h1>Escolha uma das opções acima</h1> <img src='../../img/instagram.jpg'></img>" id="tela" 
+  name="frame">
+    <p>Infelizmente seu navegador não é compatível com isso.</p>
+  </iframe>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae consequuntur consequatur reprehenderit quisquam, inventore ex ducimus. Itaque delectus labore omnis ipsum voluptate, harum quidem possimus aperiam sint ad blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo quod, placeat veritatis maiores quae numquam magnam praesentium delectus quibusdam vel laboriosam, voluptates error tempora architecto incidunt eius esse eligendi.</p>
+
+</body>
+</html>
